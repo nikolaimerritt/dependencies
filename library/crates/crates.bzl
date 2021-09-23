@@ -83,6 +83,33 @@ def raze_fetch_remote_crates():
 
     maybe(
         http_archive,
+        name = "raze__cxx__1_0_54",
+        url = "https://crates.io/api/v1/crates/cxx/1.0.54/download",
+        type = "tar.gz",
+        strip_prefix = "cxx-1.0.54",
+        build_file = Label("//library/crates/remote:BUILD.cxx-1.0.54.bazel"),
+    )
+
+    maybe(
+        http_archive,
+        name = "raze__cxxbridge_flags__1_0_54",
+        url = "https://crates.io/api/v1/crates/cxxbridge-flags/1.0.54/download",
+        type = "tar.gz",
+        strip_prefix = "cxxbridge-flags-1.0.54",
+        build_file = Label("//library/crates/remote:BUILD.cxxbridge-flags-1.0.54.bazel"),
+    )
+
+    maybe(
+        http_archive,
+        name = "raze__cxxbridge_macro__1_0_54",
+        url = "https://crates.io/api/v1/crates/cxxbridge-macro/1.0.54/download",
+        type = "tar.gz",
+        strip_prefix = "cxxbridge-macro-1.0.54",
+        build_file = Label("//library/crates/remote:BUILD.cxxbridge-macro-1.0.54.bazel"),
+    )
+
+    maybe(
+        http_archive,
         name = "raze__funty__1_1_0",
         url = "https://crates.io/api/v1/crates/funty/1.1.0/download",
         type = "tar.gz",
@@ -159,6 +186,15 @@ def raze_fetch_remote_crates():
         sha256 = "c309a9d2470844aceb9a4a098cf5286154d20596868b75a6b36357d2bb9ca25d",
         strip_prefix = "librocksdb-sys-6.20.3",
         build_file = Label("//library/crates/remote:BUILD.librocksdb-sys-6.20.3.bazel"),
+    )
+
+    maybe(
+        http_archive,
+        name = "raze__link_cplusplus__1_0_5",
+        url = "https://crates.io/api/v1/crates/link-cplusplus/1.0.5/download",
+        type = "tar.gz",
+        strip_prefix = "link-cplusplus-1.0.5",
+        build_file = Label("//library/crates/remote:BUILD.link-cplusplus-1.0.5.bazel"),
     )
 
     maybe(
@@ -269,6 +305,16 @@ def raze_fetch_remote_crates():
         sha256 = "43b2853a4d09f215c24cc5489c992ce46052d359b5109343cbafbf26bc62f8a3",
         strip_prefix = "shlex-1.1.0",
         build_file = Label("//library/crates/remote:BUILD.shlex-1.1.0.bazel"),
+    )
+
+    maybe(
+        http_archive,
+        name = "raze__syn__1_0_75",
+        url = "https://crates.io/api/v1/crates/syn/1.0.75/download",
+        type = "tar.gz",
+        sha256 = "b7f58f7e8eaa0009c5fec437aabf511bd9933e4b2d7407bd05273c01a8906ea7",
+        strip_prefix = "syn-1.0.75",
+        build_file = Label("//library/crates/remote:BUILD.syn-1.0.75.bazel"),
     )
 
     maybe(

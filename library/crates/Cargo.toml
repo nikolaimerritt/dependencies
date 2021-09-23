@@ -8,6 +8,7 @@ path = "fake_lib.rs"
 
 [dependencies]
 rocksdb = "0.17.0"
+cxx = "1.0.54"
 
 [package.metadata.raze]
 # The path at which to write output files.

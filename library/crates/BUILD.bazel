@@ -13,6 +13,15 @@ licenses([
 
 # Aliased targets
 alias(
+    name = "cxx",
+    actual = "@raze__cxx__1_0_54//:cxx",
+    tags = [
+        "cargo-raze",
+        "manual",
+    ],
+)
+
+alias(
     name = "rocksdb",
     actual = "@raze__rocksdb__0_17_0//:rocksdb",
     tags = [

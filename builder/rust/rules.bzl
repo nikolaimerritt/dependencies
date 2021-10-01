@@ -29,7 +29,7 @@ def rust_cxx_bridge(name, src, deps = []):
         tool = select({
             "@vaticle_dependencies//util/platform:is_mac": "@cxxbridge_mac//file",
             "@vaticle_dependencies//util/platform:is_linux": "@cxxbridge_linux//file",
-#            "@vaticle_dependencies//util/platform:is_windows": [name + "-windows"],
+            "@vaticle_dependencies//util/platform:is_windows": "@cxxbridge_windows//file",
 #            "//conditions:default": [name + "-mac"],
         }),
     )

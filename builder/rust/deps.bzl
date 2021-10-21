@@ -25,8 +25,8 @@ def deps():
     )
     http_file(
         name = "cxxbridge_windows",
-	urls = [
+        urls = [
             "https://repo.vaticle.com/repository/meta/cxxbridge-v1.0.55-windows.exe",
-	],
-	executable = True,
+        ],
+        executable = True,
     )

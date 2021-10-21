@@ -137,29 +137,29 @@ def raze_fetch_remote_crates():
 
     maybe(
         http_archive,
-        name = "raze__cxx__1_0_55",
-        url = "https://crates.io/api/v1/crates/cxx/1.0.55/download",
+        name = "raze__cxx__1_0_56",
+        url = "https://crates.io/api/v1/crates/cxx/1.0.56/download",
         type = "tar.gz",
-        strip_prefix = "cxx-1.0.55",
-        build_file = Label("//library/crates/remote:BUILD.cxx-1.0.55.bazel"),
+        strip_prefix = "cxx-1.0.56",
+        build_file = Label("//library/crates/remote:BUILD.cxx-1.0.56.bazel"),
     )
 
     maybe(
         http_archive,
-        name = "raze__cxxbridge_flags__1_0_55",
-        url = "https://crates.io/api/v1/crates/cxxbridge-flags/1.0.55/download",
+        name = "raze__cxxbridge_flags__1_0_56",
+        url = "https://crates.io/api/v1/crates/cxxbridge-flags/1.0.56/download",
         type = "tar.gz",
-        strip_prefix = "cxxbridge-flags-1.0.55",
-        build_file = Label("//library/crates/remote:BUILD.cxxbridge-flags-1.0.55.bazel"),
+        strip_prefix = "cxxbridge-flags-1.0.56",
+        build_file = Label("//library/crates/remote:BUILD.cxxbridge-flags-1.0.56.bazel"),
     )
 
     maybe(
         http_archive,
-        name = "raze__cxxbridge_macro__1_0_55",
-        url = "https://crates.io/api/v1/crates/cxxbridge-macro/1.0.55/download",
+        name = "raze__cxxbridge_macro__1_0_56",
+        url = "https://crates.io/api/v1/crates/cxxbridge-macro/1.0.56/download",
         type = "tar.gz",
-        strip_prefix = "cxxbridge-macro-1.0.55",
-        build_file = Label("//library/crates/remote:BUILD.cxxbridge-macro-1.0.55.bazel"),
+        strip_prefix = "cxxbridge-macro-1.0.56",
+        build_file = Label("//library/crates/remote:BUILD.cxxbridge-macro-1.0.56.bazel"),
     )
 
     maybe(
@@ -184,11 +184,11 @@ def raze_fetch_remote_crates():
 
     maybe(
         http_archive,
-        name = "raze__instant__0_1_11",
-        url = "https://crates.io/api/v1/crates/instant/0.1.11/download",
+        name = "raze__instant__0_1_12",
+        url = "https://crates.io/api/v1/crates/instant/0.1.12/download",
         type = "tar.gz",
-        strip_prefix = "instant-0.1.11",
-        build_file = Label("//library/crates/remote:BUILD.instant-0.1.11.bazel"),
+        strip_prefix = "instant-0.1.12",
+        build_file = Label("//library/crates/remote:BUILD.instant-0.1.12.bazel"),
     )
 
     maybe(

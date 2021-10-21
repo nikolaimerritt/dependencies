@@ -97,7 +97,7 @@ rust_library(
     deps = [
         ":parking_lot_core_build_script",
         "@raze__cfg_if__1_0_0//:cfg_if",
-        "@raze__instant__0_1_11//:instant",
+        "@raze__instant__0_1_12//:instant",
         "@raze__smallvec__1_7_0//:smallvec",
     ] + selects.with_or({
         # cfg(unix)

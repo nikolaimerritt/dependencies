@@ -28,10 +28,10 @@ def fetch_crates():
                 build_script_env = {"ROCKSDB_LIB_DIR": "./lib"},
             )],
             "tokio": [crate.annotation(
-                rustc_flags = ["--cfg", "tokio_unstable"],
+                rustc_flags = ["--cfg=tokio_unstable"],
             )],
             "tracing": [crate.annotation(
-                rustc_flags = ["--cfg", "tokio_unstable"],
+                rustc_flags = ["--cfg=tokio_unstable"],
             )],
         },
         supported_platform_triples = [

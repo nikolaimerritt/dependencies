@@ -30,6 +30,9 @@ def fetch_crates():
             "tokio": [crate.annotation(
                 rustc_flags = ["--cfg", "tokio_unstable"],
             )],
+            "tracing": [crate.annotation(
+                rustc_flags = ["--cfg", "tokio_unstable"],
+            )],
         },
         supported_platform_triples = [
             "aarch64-apple-darwin",
